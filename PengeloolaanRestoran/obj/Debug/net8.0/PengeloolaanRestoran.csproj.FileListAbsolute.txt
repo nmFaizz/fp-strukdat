@@ -1,0 +1,14 @@
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\bin\Debug\net8.0\PengeloolaanRestoran.exe
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\bin\Debug\net8.0\PengeloolaanRestoran.deps.json
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\bin\Debug\net8.0\PengeloolaanRestoran.runtimeconfig.json
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\bin\Debug\net8.0\PengeloolaanRestoran.dll
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\bin\Debug\net8.0\PengeloolaanRestoran.pdb
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.AssemblyInfoInputs.cache
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.AssemblyInfo.cs
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.csproj.CoreCompileInputs.cache
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.dll
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\refint\PengeloolaanRestoran.dll
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.pdb
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.genruntimeconfig.cache
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\ref\PengeloolaanRestoran.dll
