@@ -31,21 +31,20 @@ namespace PengeloolaanRestoran.lib
 
         private Karyawan InputKaryawan()
         {
-            Console.Write("Input Your Name: ");
+            Console.Write("Input name: ");
             string name = Console.ReadLine();
             Console.Write("Input age: ");
             int age = int.Parse(Console.ReadLine());
-            Console.Write("Input your division: ");
+            Console.Write("Wich division are you in? (Ex: IT): ");
             string division = Console.ReadLine();
 
             return new Karyawan(name, age, division);
         }
 
-        private bool Loading()
+        private void Loading()
         {
             Console.WriteLine("Loading...");
             Thread.Sleep(3000);
-            return true;
         }
 
         public void Run()
@@ -77,9 +76,8 @@ namespace PengeloolaanRestoran.lib
                 Console.Write("Type command: ");
                 command = Console.ReadLine();
                 
+                Environment.Exit(0);
             }
-
-            Close();
         }
 
         public void ShowMainMenu()
@@ -93,15 +91,5 @@ namespace PengeloolaanRestoran.lib
             Console.WriteLine("-- Close");
         }
 
-        public void Navigation()
-        {
-
-        }
-
-        public void Close()
-        {
-            Loading();
-            Console.WriteLine("Exited");
-        }
     }
 }
