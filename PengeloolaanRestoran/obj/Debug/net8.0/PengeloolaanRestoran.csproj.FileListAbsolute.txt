@@ -12,3 +12,4 @@ D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\re
 D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.pdb
 D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.genruntimeconfig.cache
 D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\ref\PengeloolaanRestoran.dll
+D:\CODING\strukdat\PengeloolaanRestoran\PengeloolaanRestoran\obj\Debug\net8.0\PengeloolaanRestoran.sourcelink.json

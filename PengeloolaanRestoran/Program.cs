@@ -1,9 +1,12 @@
-﻿using System; 
+﻿using PengeloolaanRestoran.lib;
+using System; 
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hai..");
+        RestoranManager rm = new RestoranManager();
+        rm.Run();
+
     }
 }
