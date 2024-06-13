@@ -85,6 +85,7 @@ namespace PengeloolaanRestoran.lib
         public void ShowMainMenu()
         {
             Console.WriteLine("================ MAIN MENU ================");
+            Console.WriteLine("# COMMANDS:");
             Console.WriteLine("-- Main Menu");
             Console.WriteLine("-- Antrian Pesanan");
             Console.WriteLine("-- Histori Transaksi");
