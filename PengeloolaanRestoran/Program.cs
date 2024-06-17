@@ -5,8 +5,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        RestoranManager rm = new RestoranManager();
-        rm.Run();
-
+        RestoranManager.Run();
     }
 }

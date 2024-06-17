@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PengeloolaanRestoran.lib
 {
-    internal class HistoriTransaksi
+    public class HistoriTransaksi
     {
 
     }
