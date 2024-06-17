@@ -12,11 +12,11 @@ namespace PengeloolaanRestoran.lib
         public int Umur;
         public string Divisi;
 
-        public Karyawan(string Nama, int Umur, string Divisi)
+        public Karyawan(string nama, int umur, string divisi)
         {
-            this.Nama = Nama;
-            this.Umur = Umur;
-            this.Divisi = Divisi;
+            this.Nama = nama != string.Empty ? nama : "Unknown";
+            this.Umur = umur > 0 ? umur : 0;
+            this.Divisi = divisi != string.Empty ? divisi : "Unknown";
         }
     }
 
@@ -31,17 +31,17 @@ namespace PengeloolaanRestoran.lib
 
         private Karyawan InputKaryawan()
         {
-            Console.Write("Input name: ");
+            Console.Write("## Input your name: ");
             string name = Console.ReadLine();
-            Console.Write("Input age: ");
+            Console.Write("## Input your age: ");
             int age = int.Parse(Console.ReadLine());
-            Console.Write("Wich division are you in? (Ex: IT): ");
+            Console.Write("## Wich division are you in? (Ex: IT): ");
             string division = Console.ReadLine();
 
             return new Karyawan(name, age, division);
         }
 
-        private void Loading()
+        private void StartLoading()
         {
             Console.WriteLine("Loading...");
             Thread.Sleep(3000);
@@ -52,43 +52,50 @@ namespace PengeloolaanRestoran.lib
             Karyawan karyawan = InputKaryawan();
             SetAdmin(karyawan);
 
-            Loading();
+            StartLoading();
 
-            string command = "main menu";
+            string command = "0";
+            bool isRunning = true;
 
-            while (command.ToLower() != "close") 
+            ShowMainMenu();
+
+            while (isRunning) 
             {
-                switch(command.ToLower())
+                switch(command)
                 {
-                    case "main menu":
-                        ShowMainMenu();
+                    case "0":
                         break;
-                    case "antrian pesanan":
+                    case "1":
                         break;
-                    case "histori transaksi":
+                    case "2":
                         break;
-                    case "manajemen menu":
+                    case "3":
+                        break;
+                    case "4":
+                        Environment.Exit(0);
                         break;
                     default:
+                        Console.WriteLine("[Command not found, Type command from 1-5.]");
                         break;
                 }
 
-                Console.Write("Type command: ");
+                Console.Write("Type command (1-5): ");
                 command = Console.ReadLine();
                 
-                Environment.Exit(0);
             }
         }
 
         public void ShowMainMenu()
         {
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine($"| Welcome, {Admin.Nama} from {Admin.Divisi} division |");
+            Console.WriteLine("------------------------------------------");
             Console.WriteLine("================ MAIN MENU ================");
             Console.WriteLine("# COMMANDS:");
-            Console.WriteLine("-- Main Menu");
-            Console.WriteLine("-- Antrian Pesanan");
-            Console.WriteLine("-- Histori Transaksi");
-            Console.WriteLine("-- Manajemen Menu");
-            Console.WriteLine("-- Close");
+            Console.WriteLine("1. Antrian Pesanan");
+            Console.WriteLine("2. Histori Transaksi");
+            Console.WriteLine("3. Manajemen Menu");
+            Console.WriteLine("4. Exit");
         }
 
     }
