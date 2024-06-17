@@ -22,50 +22,58 @@ namespace PengeloolaanRestoran.lib
 
     public class RestoranManager
     {
-        public Karyawan Admin;
-        
-        public void SetAdmin(Karyawan karyawan)
+        public static Karyawan? Admin;
+        public static AntrianPesanan? antrianPesanan = new AntrianPesanan();
+        //public ManajemenMenu manajemenMenu;
+        //public HistoriTransaksi historiTransaksi;
+
+        public static void SetAdmin(Karyawan karyawan)
         {
-            Admin = karyawan;
+            Admin = karyawan;     
         }
 
-        private Karyawan InputKaryawan()
+        private static Karyawan InputKaryawan()
         {
             Console.Write("## Input your name: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine();
             Console.Write("## Input your age: ");
             int age = int.Parse(Console.ReadLine());
             Console.Write("## Wich division are you in? (Ex: IT): ");
-            string division = Console.ReadLine();
+            string? division = Console.ReadLine();
 
             return new Karyawan(name, age, division);
         }
 
-        private void StartLoading()
+        protected static void StartLoading()
         {
             Console.WriteLine("Loading...");
             Thread.Sleep(3000);
         }
 
-        public void Run()
+        public static void Run()
         {
-            Karyawan karyawan = InputKaryawan();
-            SetAdmin(karyawan);
+            Karyawan newKaryawan = InputKaryawan();
+            SetAdmin(newKaryawan);
 
             StartLoading();
 
             string command = "0";
             bool isRunning = true;
 
-            ShowMainMenu();
 
             while (isRunning) 
             {
-                switch(command)
+                ShowMainMenu();
+                Console.Write("Type command (1-5): ");
+                command = Console.ReadLine();
+
+                switch (command)
                 {
                     case "0":
+                        
                         break;
                     case "1":
+                        AntrianManager.Run();
                         break;
                     case "2":
                         break;
@@ -78,17 +86,13 @@ namespace PengeloolaanRestoran.lib
                         Console.WriteLine("[Command not found, Type command from 1-5.]");
                         break;
                 }
-
-                Console.Write("Type command (1-5): ");
-                command = Console.ReadLine();
-                
             }
         }
 
-        public void ShowMainMenu()
+        public static void ShowMainMenu()
         {
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine($"| Welcome, {Admin.Nama} from {Admin.Divisi} division |");
+            Console.WriteLine($"| Halo, {Admin.Nama} dari divisi {Admin.Divisi} |");
             Console.WriteLine("------------------------------------------");
             Console.WriteLine("================ MAIN MENU ================");
             Console.WriteLine("# COMMANDS:");
