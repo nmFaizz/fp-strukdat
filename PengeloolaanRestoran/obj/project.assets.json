@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODING\\strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
+      "projectUniqueName": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
       "projectName": "PengeloolaanRestoran",
-      "projectPath": "D:\\CODING\\strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
+      "projectPath": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\CODING\\strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran\\obj\\",
+      "outputPath": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
