@@ -25,7 +25,7 @@ namespace PengeloolaanRestoran.lib
         public static Karyawan? Admin;
         public static AntrianPesanan? antrianPesanan = new AntrianPesanan();
         //public ManajemenMenu manajemenMenu;
-        //public HistoriTransaksi historiTransaksi;
+        public static HistoriTransaksi? historiTransaksi = new HistoriTransaksi();
 
         public static void SetAdmin(Karyawan karyawan)
         {
@@ -64,7 +64,7 @@ namespace PengeloolaanRestoran.lib
             while (isRunning) 
             {
                 ShowMainMenu();
-                Console.Write("Type command (1-5): ");
+                Console.Write("Type command (1-4): ");
                 command = Console.ReadLine();
 
                 switch (command)
@@ -73,6 +73,7 @@ namespace PengeloolaanRestoran.lib
                         AntrianManager.Run();
                         break;
                     case "2":
+                        HistoriManager.Run();
                         break;
                     case "3":
                         break;

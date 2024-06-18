@@ -227,7 +227,9 @@ namespace PengeloolaanRestoran.lib
             Console.Write("## Ketik detail antrian [ID Pesanan] - [Nama Pembeli]: ");
             string detailAntrian = Console.ReadLine();
             antrianPesanan.Enqueue(detailAntrian);
+            historiTransaksi.Push(detailAntrian);
             Console.WriteLine("-> Antrian berhasil ditambahkan !");
+
         }
 
         public static void SelesaikanAntrianDepan()
