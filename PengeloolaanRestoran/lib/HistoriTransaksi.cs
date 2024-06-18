@@ -29,7 +29,7 @@ namespace PengeloolaanRestoran.lib
 
         public void Push(string histori)
         {
-            HistoriNode newNode = new HistoriNode(histori);
+            HistoriNode newNode = new HistoriNode(histori + " " + DateTime.Now);
             newNode.Next = Top;
             Top = newNode;  
         }
@@ -126,6 +126,7 @@ namespace PengeloolaanRestoran.lib
                         isRunning = false;
                         break;
                     default:
+                        Console.WriteLine("[Command not found, Type command from 1-4.]");
                         break;
                 }
             }

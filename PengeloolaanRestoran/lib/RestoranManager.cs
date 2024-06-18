@@ -24,7 +24,7 @@ namespace PengeloolaanRestoran.lib
     {
         public static Karyawan? Admin;
         public static AntrianPesanan? antrianPesanan = new AntrianPesanan();
-        //public ManajemenMenu manajemenMenu;
+        public MenuManager manajemenMenu = new MenuManager();
         public static HistoriTransaksi? historiTransaksi = new HistoriTransaksi();
 
         public static void SetAdmin(Karyawan karyawan)
@@ -76,12 +76,13 @@ namespace PengeloolaanRestoran.lib
                         HistoriManager.Run();
                         break;
                     case "3":
+                        MenuManager.Run();
                         break;
                     case "4":
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("[Command not found, Type command from 1-5.]");
+                        Console.WriteLine("[Command not found, Type command from 1-4.]");
                         break;
                 }
             }

@@ -30,7 +30,7 @@ namespace PengeloolaanRestoran.lib
         {
             Head = null;
             Tail = null;
-            Size = 1;
+            Size = 0;
         }
         
         public void Enqueue(string node)
@@ -41,7 +41,6 @@ namespace PengeloolaanRestoran.lib
             {
                 Head = newNode;
                 Tail = newNode;
-                return;
             } else
             {
                 Tail.Next = newNode;
