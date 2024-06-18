@@ -168,6 +168,8 @@ namespace PengeloolaanRestoran.lib
                 }
             }
 
+
+            Console.WriteLine("Antrian berhasil dihapus...");
             Size--;
         }
 
@@ -194,8 +196,6 @@ namespace PengeloolaanRestoran.lib
 
                 switch (command)
                 {
-                    case "0":
-                        break;
                     case "1":             
                         TambahAntrian();
                         break;
@@ -209,6 +209,9 @@ namespace PengeloolaanRestoran.lib
                         EditAntrian();
                         break;
                     case "5":
+                        HapusAntrian();
+                        break;
+                    case "6":
                         isRunning = false;
                         break;
                     default:
@@ -280,7 +283,8 @@ namespace PengeloolaanRestoran.lib
         {
             if (!IsQueueEmpty())
             {
-                Console.Write("");
+                TampilkanAntrian();
+                Console.Write("Antrian ke-berapa yang ingin anda hapus?: ");
                 int target = int.Parse(Console.ReadLine());
 
                 if (target > 0 && target <= antrianPesanan.GetSize())
@@ -302,7 +306,8 @@ namespace PengeloolaanRestoran.lib
             Console.WriteLine("2. Selesaikan Antrian Depan");
             Console.WriteLine("3. Daftar Antrian");
             Console.WriteLine("4. Edit Antrian");
-            Console.WriteLine("5. Back");
+            Console.WriteLine("5. Hapus Antrian");
+            Console.WriteLine("6. Back");
         }
     }
 }

@@ -69,9 +69,6 @@ namespace PengeloolaanRestoran.lib
 
                 switch (command)
                 {
-                    case "0":
-                        
-                        break;
                     case "1":
                         AntrianManager.Run();
                         break;
