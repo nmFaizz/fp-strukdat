@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PengelolaanRestoran.lib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace PengeloolaanRestoran.lib
     {
         public static Karyawan? Admin;
         public static AntrianPesanan? antrianPesanan = new AntrianPesanan();
-        public MenuManager manajemenMenu = new MenuManager();
+        public static MenuManager? MenuManager = new MenuManager();
         public static HistoriTransaksi? historiTransaksi = new HistoriTransaksi();
 
         public static void SetAdmin(Karyawan karyawan)
@@ -38,7 +39,7 @@ namespace PengeloolaanRestoran.lib
             string? name = Console.ReadLine();
             Console.Write("## Input your age: ");
             int age = int.Parse(Console.ReadLine());
-            Console.Write("## Wich division are you in? (Ex: IT): ");
+            Console.Write("## Which division are you in? (Ex: IT): ");
             string? division = Console.ReadLine();
 
             return new Karyawan(name, age, division);
