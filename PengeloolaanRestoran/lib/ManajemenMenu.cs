@@ -83,12 +83,12 @@ namespace PengelolaanRestoran.lib
             }
 
             MenuNode current = Head;
-            for (int i = 0; i < startIndex && current != null; i++)
+            for (int i = 0; i < startIndex && current != null; i++) //moves the current node to the starting index (first element in specified page)
             {
                 current = current.Next;
             }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-            for (int i = 0; i < pageSize && current != null; i++)
+            for (int i = 0; i < pageSize && current != null; i++) //prints the elements in specified page until page size is reached
             {
                 Console.WriteLine($"{startIndex + i + 1}: {current.Value}");
                 current = current.Next;
@@ -99,7 +99,7 @@ namespace PengelolaanRestoran.lib
         {
             if (index < 0 || index >= Size)
             {
-                throw new ArgumentOutOfRangeException(nameof(index), "Index out of range");
+                throw new ArgumentOutOfRangeException(nameof(index), "Index out of range"); //nameof(index) gets the index for the parameter of exception
             }
 
             MenuNode current = Head;
@@ -115,13 +115,13 @@ namespace PengelolaanRestoran.lib
         {
             if (index < 0 || index >= Size)
             {
-                throw new ArgumentOutOfRangeException(nameof(index), "Index out of range");
+                throw new ArgumentOutOfRangeException(nameof(index), "Index out of range"); //nameof(index) gets the index for the parameter of exception
             }
 
             if (index == 0)
             {
                 Head = Head.Next;
-                if (Head == null)  // If the list becomes empty
+                if (Head == null)  // if the list becomes empty
                 {
                     Tail = null;
                 }
@@ -133,8 +133,8 @@ namespace PengelolaanRestoran.lib
                 {
                     current = current.Next;
                 }
-                current.Next = current.Next.Next;
-                if (current.Next == null)  // If we removed the last element
+                current.Next = current.Next.Next; // skips the node so that it has no reference, therefore deleted
+                if (current.Next == null)  // if we removed the last element
                 {
                     Tail = current;
                 }
@@ -206,7 +206,7 @@ namespace PengelolaanRestoran.lib
             {
                 try
                 {
-                    menuList.DeleteMenu(index - 1); // Adjusting index for 1-based user input
+                    menuList.DeleteMenu(index - 1); // adjusting index for 1-based user input
                     Console.WriteLine("Menu berhasil dihapus.");
                 }
                 catch (ArgumentOutOfRangeException)
