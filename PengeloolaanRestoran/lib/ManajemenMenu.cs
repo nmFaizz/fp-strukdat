@@ -55,13 +55,6 @@ namespace PengelolaanRestoran.lib
             return Head == null;
         }
 
-        public void DeleteAllMenu()
-        {
-            Head = null;
-            Tail = null;
-            Size = 0;
-        }
-
         public int GetSize()
         {
             return Size;
