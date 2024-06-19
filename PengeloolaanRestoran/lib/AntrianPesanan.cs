@@ -301,7 +301,7 @@ namespace PengeloolaanRestoran.lib
 
         public static void ShowAntrianMenu()
         {
-            Console.WriteLine("================ MENU ANTRIAN PESANAN ================");
+            Console.WriteLine("\n================ MENU ANTRIAN PESANAN ================");
             Console.WriteLine($"Total antrian: {antrianPesanan.GetSize()}");
             Console.WriteLine("1. Tambahkan Antrian");
             Console.WriteLine("2. Selesaikan Antrian Depan");

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\trsch\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trsch\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
+      "projectUniqueName": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
       "projectName": "PengeloolaanRestoran",
-      "projectPath": "C:\\Users\\trsch\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
-      "packagesPath": "C:\\Users\\trsch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trsch\\fp-strukdat\\PengeloolaanRestoran\\obj\\",
+      "projectPath": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\PengeloolaanRestoran.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "D:\\CODING\\strukdat\\fp-strukdat\\PengeloolaanRestoran\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\trsch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

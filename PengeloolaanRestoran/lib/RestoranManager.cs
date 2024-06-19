@@ -25,7 +25,6 @@ namespace PengeloolaanRestoran.lib
     {
         public static Karyawan? Admin;
         public static AntrianPesanan? antrianPesanan = new AntrianPesanan();
-        public static MenuManager? MenuManager = new MenuManager();
         public static HistoriTransaksi? historiTransaksi = new HistoriTransaksi();
 
         public static void SetAdmin(Karyawan karyawan)
@@ -58,7 +57,7 @@ namespace PengeloolaanRestoran.lib
 
             StartLoading();
 
-            string command = "0";
+            string command;
             bool isRunning = true;
 
 

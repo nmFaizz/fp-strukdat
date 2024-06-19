@@ -20,7 +20,7 @@ namespace PengeloolaanRestoran.lib
 
     public class HistoriTransaksi
     {
-        public HistoriNode? Top;
+        private HistoriNode? Top;
 
         public HistoriTransaksi()
         {
@@ -155,7 +155,7 @@ namespace PengeloolaanRestoran.lib
 
         public static void ShowHistoriMenu()
         {
-            Console.WriteLine("================ MENU HISTORI ================");
+            Console.WriteLine("\n================ MENU HISTORI ================");
             Console.WriteLine("1. Lihat histori");
             Console.WriteLine("2. Undo histori");
             Console.WriteLine("3. Hapus semua histori");

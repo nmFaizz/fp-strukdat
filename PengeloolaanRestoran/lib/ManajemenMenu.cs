@@ -176,6 +176,7 @@ namespace PengelolaanRestoran.lib
 
         public static void EditMenu()
         {
+            TampilkanMenu();
             Console.Write("Masukkan indeks menu yang ingin diubah: ");
             if (int.TryParse(Console.ReadLine(), out int index))
             {
@@ -199,6 +200,7 @@ namespace PengelolaanRestoran.lib
 
         public static void HapusMenu()
         {
+            TampilkanMenu();
             Console.Write("Masukkan indeks menu yang ingin dihapus: ");
             if (int.TryParse(Console.ReadLine(), out int index))
             {
@@ -223,12 +225,13 @@ namespace PengelolaanRestoran.lib
             while (true)
             {
                 Console.WriteLine("\n================ MANAJEMEN MENU ================");
+                Console.WriteLine($"-- Halaman menu saat ini: {currentPage}");
                 Console.WriteLine("1. Tampilkan Menu (Halaman Sebelumnya)");
                 Console.WriteLine("2. Tampilkan Menu (Halaman Selanjutnya)");
                 Console.WriteLine("3. Tambahkan Menu");
                 Console.WriteLine("4. Edit Menu");
                 Console.WriteLine("5. Hapus Menu");
-                Console.WriteLine("6. Keluar");
+                Console.WriteLine("6. Back");
                 Console.Write("Type Command (1-6): ");
 
                 switch (Console.ReadLine())

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PengeloolaanRestoran")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e8fbf61c2ab3ee03f0d756e3d54623eefb33a83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d18b0d191dd8bf1f764707a5fa142711c1196461")]
 [assembly: System.Reflection.AssemblyProductAttribute("PengeloolaanRestoran")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PengeloolaanRestoran")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
